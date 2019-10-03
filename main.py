@@ -110,7 +110,7 @@ scraper.dataset.theme = THEME['housing-planning-local-services']
 with open(out / 'dataset.trig', 'wb') as metadata:
     metadata.write(scraper.generate_trig())
     
-schema = CSVWMetadata('https://ons-opendata.github.io/ref_housing/')
+schema = CSVWMetadata('https://gss-cogs.github.io/ref_housing/')
 schema.create(out / 'observations.csv', out / 'observations.csv-schema.json')
 # -
 
